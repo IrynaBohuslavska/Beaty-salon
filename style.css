@@ -1,0 +1,20 @@
+body {
+  padding: 25px; !important;
+  background-color: white; !important;
+  color: black; !important;
+  font-size: 25px; !important;
+}
+
+.dark-mode {
+  background-color: rgba(32, 33, 44, 0.79); !important;
+  color: #ffffff; !important;
+}
+
+.dark-background{
+  background-color: #76777f !important;
+  color: #ffffff; !important;
+}
+
+
+
+
