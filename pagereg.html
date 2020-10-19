@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon"
+          href="https://e7.pngegg.com/pngimages/489/1019/png-clipart-united-arrows-ltd-beauty-youth-united-arrows-fashion-united-arrows-women-s-beams-logo-beauty-ltd-beauty.png">
+    <script src="sc.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+
+</head>
+
+<body>
+
+
+<header>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img src="https://seeklogo.com/images/B/beauty-youth-logo-20F216BE2F-seeklogo.com.png"
+             height="60px" alt="" class="m-lg-2">
+
+        <a href="http://localhost:63342/beautysalonsite/site/One/index.html?_ijt=oe4voudnjv9l7f23u5nb87ugd0#">
+            <img src="https://rbt-service24.ru/images/tild3230-6262-4135-b864-646338613637__1600.png" alt="back"
+                 height="30">
+
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+
+                <div class="button btn">
+
+
+                </div>
+
+
+            </ul>
+        </div>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" onchange="myFunction2()">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+        </div>
+
+    </nav>
+</header>
+
+<br><br><br><br>
+<div class="justify-content-center container body-content">
+    <div class="row justify-content-center row ">
+        <div class="col-md-12">
+            <a name="regis"></a>
+
+            <h2 class="featurette-heading text"> Registation on servise</h2>
+            <hr class="featurette-divider">
+            <br><br>
+        </div>
+        <!--FORM-->
+
+        <div class="card row ">
+            <header class="card-header">
+
+                <h4 class="card-title mt-2">Registation</h4>
+            </header>
+            <article class="card-body">
+                <form name="myForm" action="/sc.js" onsubmit="event.preventDefault();onFormSubmit();" method="post">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label>Full Name </label>
+                            <label class="validation-error hide" id="fullNameValidationError"></label>
+                            <div>
+                                <input class="form-control" type="text" name="fullName" id="fullName"
+                                       onfocus="myFunction()">
+                            </div>
+                        </div>
+
+                    </div> <!-- form-row end.// -->
+                    <div class="form-group">
+                        <label>E-mail </label>
+                        <input type="email" class="form-control" name="empCode" id="empCode" placeholder=""
+                               >
+                    </div> <!-- form-group end.// -->
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>City</label>
+                            <input type="text" class="form-control"  name="city" id="city"
+                                   onchange="myFunction1(this.value)">
+                        </div> <!-- form-group end.// -->
+
+                        <div class="form-group col-md-6">
+                            <label>Service</label>
+                            <input type="text" class="form-control" name="salary" id="salary">
+
+                        </div>
+
+                    </div> <!-- form-row.// -->
+
+                    <div class="form-group">
+
+                        <button id="insert" type="submit" class="btn btn-primary form-control form-action-buttons"> Register</button>
+
+
+                    </div>
+
+                </form>
+            </article>
+
+            <div class="border-top card-body text-center">
+                Thank you, for your registration.
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<hr>
+<h4>Registrated incomes</h4>
+<table class="table table-border table-hover">
+
+</table>
+
+
+
+<table class="table list" id="employeeList">
+    <thead>
+    <tr>
+        <th scope="col">Full Name</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">City</th>
+        <th scope="col">Service</th>
+    </tr>
+    </thead>
+    <tbody>
+
+
+    </tbody>
+</table>
+
+</body>
+</html>
